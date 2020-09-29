@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		319AC1162523CE4A00073E4C /* imageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319AC1152523CE4A00073E4C /* imageSaver.swift */; };
+		319AC11B2523D7CE00073E4C /* imageMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319AC11A2523D7CE00073E4C /* imageMerger.swift */; };
 		31C525D3251FC8EE006C6878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C525D2251FC8EE006C6878 /* AppDelegate.swift */; };
 		31C525D5251FC8EE006C6878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C525D4251FC8EE006C6878 /* SceneDelegate.swift */; };
 		31C525D7251FC8EE006C6878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C525D6251FC8EE006C6878 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		319AC1152523CE4A00073E4C /* imageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSaver.swift; sourceTree = "<group>"; };
+		319AC11A2523D7CE00073E4C /* imageMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageMerger.swift; sourceTree = "<group>"; };
 		31C525CF251FC8EE006C6878 /* black-bars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "black-bars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C525D2251FC8EE006C6878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31C525D4251FC8EE006C6878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				31C525DA251FC8F0006C6878 /* Preview Content */,
 				31FC8FF7252013D40016D30D /* imagePicker.swift */,
 				319AC1152523CE4A00073E4C /* imageSaver.swift */,
+				319AC11A2523D7CE00073E4C /* imageMerger.swift */,
 			);
 			path = "black-bars";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				31C525D3251FC8EE006C6878 /* AppDelegate.swift in Sources */,
 				31FC8FF8252013D40016D30D /* imagePicker.swift in Sources */,
 				31C525D5251FC8EE006C6878 /* SceneDelegate.swift in Sources */,
+				319AC11B2523D7CE00073E4C /* imageMerger.swift in Sources */,
 				319AC1162523CE4A00073E4C /* imageSaver.swift in Sources */,
 				31C525D7251FC8EE006C6878 /* ContentView.swift in Sources */,
 			);

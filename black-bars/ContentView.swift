@@ -68,18 +68,30 @@ struct ContentView: View{
 
                     Button("Save") {
                         guard let processedImage = self.processedImage else { return }
+                        
+                        // TOOD change image to square black photo and use it as the bottom image
+                        let localAsset = UIImage(named: "TCT_Logo")
+                        
+                        if(localAsset != nil){
+                            let mergedImage = UIImage.imageByMergingImages(topImage: processedImage, bottomImage: localAsset!)
+                            print("merged")
+                            
+                            let imageSaver = ImageSaver()
 
-                        let imageSaver = ImageSaver()
+                            imageSaver.successHandler = {
+                                print("Success!")
+                            }
 
-                        imageSaver.successHandler = {
-                            print("Success!")
+                            imageSaver.errorHandler = {
+                                print("Oops: \($0.localizedDescription)")
+                            }
+
+                            imageSaver.writeToPhotoAlbum(image: mergedImage)
+                            print("Saved")
+                        } else {
+                            print("Failed to load top image")
                         }
-
-                        imageSaver.errorHandler = {
-                            print("Oops: \($0.localizedDescription)")
-                        }
-
-                        imageSaver.writeToPhotoAlbum(image: processedImage)
+                        
                     }
                 }
             }

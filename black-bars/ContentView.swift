@@ -73,7 +73,7 @@ struct ContentView: View{
                         let localAsset = UIImage(named: "TCT_Logo")
                         
                         if(localAsset != nil){
-                            let mergedImage = UIImage.imageByMergingImages(topImage: processedImage, bottomImage: localAsset!)
+                            let mergedImage = UIImage.imageByMergingImages(topImage: localAsset!, bottomImage: processedImage)
                             print("merged")
                             
                             let imageSaver = ImageSaver()

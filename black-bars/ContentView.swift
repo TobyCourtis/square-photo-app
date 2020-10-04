@@ -69,11 +69,12 @@ struct ContentView: View{
                     Button("Save") {
                         guard let processedImage = self.processedImage else { return }
                         
-                        // TOOD change image to square black photo and use it as the bottom image
+                        // TODO change image to square black photo and use it as the bottom image
                         let localAsset = UIImage(named: "TCT_Logo")
+                        let blueBackground = UIImage(named: "blue_background")
                         
                         if(localAsset != nil){
-                            let mergedImage = UIImage.imageByMergingImages(topImage: localAsset!, bottomImage: processedImage)
+                            let mergedImage = UIImage.imageByMergingImages(topImage: blueBackground!, bottomImage: blueBackground!)
                             print("merged")
                             
                             let imageSaver = ImageSaver()
